@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 
 //TODO remove props if unused
 export default function Header(props) {
-    const [page, setPage] = useState('')
+    const [page, setPage] = useState('Portfolio')
 
     function renderPage() {
         switch(page) {
@@ -32,7 +32,9 @@ export default function Header(props) {
                 <h1>John Hornick</h1>
                 <Navigation currentPage={page} changePage={changePage} />
             </header>
-            {renderPage()}
+            <main>
+                {renderPage()}
+            </main>
         </div>
     );
 }
