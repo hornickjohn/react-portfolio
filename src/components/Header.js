@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import Navigation from './Navigation'
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Portfolio from './pages/Portfolio';
+import Resume from './pages/Resume';
 
+//TODO remove props if unused
 export default function Header(props) {
     const [page, setPage] = useState('')
 
@@ -24,7 +29,7 @@ export default function Header(props) {
     return (
         <div>
             <header>
-                {/* TODO name/title element floating left in header */}
+                <h1>John Hornick</h1>
                 <Navigation currentPage={page} changePage={changePage} />
             </header>
             {renderPage()}

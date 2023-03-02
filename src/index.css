@@ -12,3 +12,6 @@ code {
     monospace;
 }
 
+#page-nav a.active {
+  color:red;
+}
