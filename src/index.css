@@ -59,7 +59,7 @@ header h1 {
   transition: transform 0.5s;
 }
 .hovereffect:hover {
-  filter:brightness(200%);
+  filter:brightness(150%);
   transform:scale(105%);
   box-shadow: 0 0 20px 20px var(--secondary-foreground);
 }
@@ -71,7 +71,8 @@ header h1 {
   justify-content: space-around;
 }
 .card {
-  width:39%;
+  width:45%;
+  min-width:300px;
   margin:1%;
 }
 .card span {
@@ -103,6 +104,29 @@ header h1 {
   color:white;
 }
 
+#contact-area {
+  border:5px solid black;
+  border-radius:20px;
+  max-width:1000px;
+}
+.form-header {
+  background-color:black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+#contact-area h2 {
+  margin:0;
+  padding:20px;
+  color:white;
+}
+#contact-area form {
+  padding:20px;
+}
+
 main {
-  padding:50px;
+  padding:30px;
+}
+.center-content {
+  display:flex;
+  justify-content:center;
 }
