@@ -54,7 +54,7 @@ export default function Contact() {
                     <h2>Contact Me</h2>
                 </div>
                 <form onSubmit={handleFormSubmit}>
-                    <label for="contact-name">Name:</label>
+                    <label htmlFor="contact-name">Name:</label>
                     <input
                         value={name}
                         id="contact-name"
@@ -62,7 +62,7 @@ export default function Contact() {
                         onChange={handleInputChange}
                         type="text"
                     />
-                    <label for="contact-email">Email:</label>
+                    <label htmlFor="contact-email">Email:</label>
                     <input
                         value={email}
                         id="contact-email"
@@ -70,7 +70,7 @@ export default function Contact() {
                         onChange={handleInputChange}
                         type="text"
                     />
-                    <label for="contact-message">Message:</label>
+                    <label htmlFor="contact-message">Message:</label>
                     <textarea
                         value={message}
                         id="contact-message"
