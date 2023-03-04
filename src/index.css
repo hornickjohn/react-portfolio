@@ -76,6 +76,10 @@ header h1 {
   width:70%;
   font-size:larger;
 }
+#about-area img {
+  width:100px;
+  height:100px;
+}
 
 /* Behavior of link cards in project section */
 #portfolio-area {
@@ -175,6 +179,10 @@ header h1 {
 }
 #contact-area form textarea, #contact-area form input {
   width:100%;
+}
+
+footer a {
+  margin:10px;
 }
 
 main {
