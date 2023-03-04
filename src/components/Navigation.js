@@ -6,17 +6,17 @@ function Navigation(props) {
         <ul id="page-nav">
             <li>
                 <a
-                    href="#portfolio"
-                    onClick={() => props.changePage('Portfolio')}
-                    className={props.currentPage === 'Portfolio' ? 'active' : ''}
-                >Portfolio</a>
-            </li>
-            <li>
-                <a
                     href="#about"
                     onClick={() => props.changePage('About')}
                     className={props.currentPage === 'About' ? 'active' : ''}
                 >About</a>
+            </li>
+            <li>
+                <a
+                    href="#portfolio"
+                    onClick={() => props.changePage('Portfolio')}
+                    className={props.currentPage === 'Portfolio' ? 'active' : ''}
+                >Portfolio</a>
             </li>
             <li>
                 <a

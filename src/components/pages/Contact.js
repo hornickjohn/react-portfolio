@@ -11,24 +11,38 @@ export default function Contact() {
     const [message, setMessage] = useState('');
     const [errorMessage, setErrorMessage] = useState('');
 
+    const validateInput = (e) => {
+        let checkname = true;
+        let checkemail = true;
+        let checkmessage = true;
+        if(e) {
+            const whichinput = e.target.name;
+            checkname = whichinput === 'name';
+            checkemail = whichinput === 'email';
+            checkmessage = whichinput === 'message';
+        }
+        if(checkname && !(name.trim())) {
+            setErrorMessage('Please provide a name.');
+            return false;
+        }
+        if(checkemail && !validateEmail(email.trim())) {
+            setErrorMessage('Invalid email format.');
+            return false;
+        }
+        if(checkmessage && !(message.trim())) {
+            setErrorMessage('No message entered.');
+            return false;
+        }
+        return true;
+    };
+
     const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        if(!name) {
-            setErrorMessage('Please provide a name.');
-            return;
+        if(validateInput()) {
+            //Future Development:
+            //Package inputs and ship them off wherever
         }
-        if(!validateEmail(email)) {
-            setErrorMessage('Invalid email format.');
-            return;
-        }
-        if(!message) {
-            setErrorMessage('No message entered.');
-            return;
-        }
-
-
-
     };
 
     const handleInputChange = (e) => {
@@ -60,6 +74,7 @@ export default function Contact() {
                         id="contact-name"
                         name="name"
                         onChange={handleInputChange}
+                        onBlur={validateInput}
                         type="text"
                     />
                     <label htmlFor="contact-email">Email:</label>
@@ -68,6 +83,7 @@ export default function Contact() {
                         id="contact-email"
                         name="email"
                         onChange={handleInputChange}
+                        onBlur={validateInput}
                         type="text"
                     />
                     <label htmlFor="contact-message">Message:</label>
@@ -76,6 +92,7 @@ export default function Contact() {
                         id="contact-message"
                         name="message"
                         onChange={handleInputChange}
+                        onBlur={validateInput}
                     />
                     <button>
                         Submit

@@ -67,7 +67,7 @@ header h1 {
   transition: transform 0.5s;
 }
 .hovereffect:hover {
-  filter:brightness(125%);
+  filter:brightness(120%);
   transform:scale(105%);
   box-shadow: 0 0 20px 20px var(--primarytext);
 }
@@ -87,6 +87,12 @@ header h1 {
   width:45%;
   min-width:300px;
   margin:1%;
+}
+.card figure>img {
+  transition:filter 0.5s;
+}
+.card:hover figure>img {
+  filter:contrast(30%);
 }
 .card span {
   font-size: 70%;
@@ -112,7 +118,6 @@ header h1 {
   display:block;
   position:absolute;
   height:auto;
-  width:150px;
   padding:5px;
   font-size:20px;
   background-color:var(--primaryback);

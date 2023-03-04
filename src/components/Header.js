@@ -7,7 +7,7 @@ import Resume from './pages/Resume';
 
 //TODO remove props if unused
 export default function Header(props) {
-    const [page, setPage] = useState('Portfolio')
+    const [page, setPage] = useState('About')
 
     function renderPage() {
         switch(page) {
