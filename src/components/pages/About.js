@@ -7,7 +7,7 @@ export default function About() {
                 <h2>
                     About Me
                 </h2>
-                <img src="/port_img/mepic.jpg" />
+                <img src="./port_img/mepic.jpg" />
                 <p>
                     I have been programming for about as long as I can remember! From silly little .NET C# applications in youth (when the framework was new!), using buttons to change text in labels, all the way to taking courses in college and dabbling in new languages and platforms. Most recently, I dove into a web development bootcamp to consolidate, modernize, and most importantly improve my knowledge and practices.
                 </p>
