@@ -5,8 +5,7 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 
-//TODO remove props if unused
-export default function Header(props) {
+export default function Header() {
     const [page, setPage] = useState('About')
 
     function renderPage() {

@@ -142,7 +142,7 @@ header h1 {
   display:block;
 }
 .card a img {
-  filter:brightness(170%);
+  filter:brightness(400%);
 }
 .card a:hover img {
   filter:brightness(100%);
@@ -195,4 +195,16 @@ main {
 .center-content {
   display:flex;
   justify-content:center;
+}
+
+@media only screen and (max-width:963px) {
+  header {
+    justify-content:center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card { 
+    width:80%;
+  }
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 
-//TODO remove props if unused
-function Footer(props) {
+function Footer() {
     return (
         <footer className="center-content">
             <a href="https://github.com/hornickjohn" target="_blank"><button>GitHub</button></a>
