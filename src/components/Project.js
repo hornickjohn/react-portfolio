@@ -16,7 +16,7 @@ function Project(props) {
         let margin = "20%";
         if(!props.project.repoLink) { margin="40%"; }
         return (<a href={link} style={{marginRight:margin, marginBottom:'8%'}} target="_blank">
-        <img src={DeployedLogo} alt="Deployed Product" title="Deployed Site" />
+        <img src={DeployedLogo} alt="Deployed Product" title="Deployed Product" />
         </a>);
     }
 

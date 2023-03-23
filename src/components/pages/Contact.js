@@ -64,6 +64,11 @@ export default function Contact() {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
+            }).then(()=>{
+                setName('');
+                setEmail('');
+                setMessage('');
+                alert('Message sent. Thanks!');
             });
         }
     };

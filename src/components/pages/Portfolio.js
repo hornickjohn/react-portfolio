@@ -41,24 +41,23 @@ export default function Portfolio() {
             key:3
         },
         {
-            name:'Security Map (Front)',
-            techs:'React, Azure Maps',
+            name:'Security Map',
+            techs:'React/Azure Maps/Express/SQL',
             img:SecurityFrontImage,
             imgAlt:'Map with pinned data from security map\'s front end client.',
             deployedLink:'https://securitymap.netlify.app/',
-            repoLink:'https://github.com/SidneyBasa/team12_project3_security_map',
             year:'2023',
             key:4
         },
-        {
-            name:'Security Map (Back)',
-            techs:'Node/Express/Sequelize',
-            img:SecurityBackImage,
-            imgAlt:'Sample incident table data being queried in MySQL shell.',
-            repoLink:'https://github.com/SidneyBasa/Team12_Project3_Server',
-            year:'2023',
-            key:5
-        },
+        // {
+        //     name:'Security Map (Back)',
+        //     techs:'Node/Express/Sequelize',
+        //     img:SecurityBackImage,
+        //     imgAlt:'Sample incident table data being queried in MySQL shell.',
+        //     repoLink:'https://github.com/SidneyBasa/Team12_Project3_Server',
+        //     year:'2023',
+        //     key:5
+        // },
         {
             name:'This Portfolio',
             techs:'React',

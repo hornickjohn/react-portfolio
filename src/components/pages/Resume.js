@@ -1,10 +1,11 @@
 import React from 'react';
+import ResumeDoc from '../../port_file/JohnHornickResume.docx';
 
 export default function Resume() {
     return (
         <div>
             <h2>Resume</h2>
-            <a href="/port_file/JohnHornickResume.docx" download><button>Download Full Version</button></a>
+            <a href={ResumeDoc} download><button>Download Full Version</button></a>
             <h3>Front-end Proficiencies</h3>
             <ul>
                 <li>HTML</li>
@@ -20,7 +21,7 @@ export default function Resume() {
                 <li>APIs</li>
                 <li>Node</li>
                 <li>Express</li>
-                <li>mySQL, Sequelize</li>
+                <li>MySQL, Sequelize</li>
                 <li>MongoDB, Mongoose</li>
                 <li>REST</li>
             </ul>
